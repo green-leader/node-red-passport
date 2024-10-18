@@ -47,6 +47,8 @@ jobs:
             type=raw,value=latest,enable={{is_default_branch}}
             # set date as tag using ISO8601
             type=raw,value={{date 'YYYY-MM-DD'}}
+            # get branch or tag that triggered the run
+            type=raw,value={{github.ref_name}}
 
       - name: Log in to ghcr.io
         uses: docker/login-action@v2
