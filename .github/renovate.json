@@ -5,7 +5,7 @@
     ],
     "packageRules": [
         {
-            "description": "Automerge any github-action changes",
+            "_comment": "Automerge any github-action changes",
             "matchManagers": [
                 "github-actions"
             ],
