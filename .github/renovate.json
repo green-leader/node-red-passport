@@ -9,6 +9,7 @@
                 "github-actions"
             ],
             "matchUpdateTypes": [
+                "major",
                 "minor",
                 "patch"
             ],
