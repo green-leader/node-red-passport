@@ -1,12 +1,12 @@
 ---
-name: 'Build and Deploy'
+name: Test and Deploy
 
-on:
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - main
-    tags:
-      - 'v*'
+      - master
+  pull_request:
       
 env:
   PLATFORMS: linux/amd64,linux/arm64
